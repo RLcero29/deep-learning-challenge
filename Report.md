@@ -27,7 +27,6 @@ The EIN and NAME variables were removed from the input data set because they are
 <br>
 **Compiling, Training, and Evaluating the Model**
 <br>
-**How many neurons, layers, and activation functions did you select for your neural network model, and why?**<br>
 For the first attempt, I used 2 hidden layers, with 80 neurons in the first layer and 30 in the second. Both layers used the relu activation function.<br>
 ![image](https://github.com/user-attachments/assets/6b23e2d5-a762-4e8b-ae38-88b06c233b39) <br>
 
@@ -39,7 +38,14 @@ The third attempt, I kept 2 hidden layers, but increased the number of neurons t
 
 The fourth and final attempt included the same number of layers and the same number of neurons, but I decided to use the relu function again.<br>
 ![image](https://github.com/user-attachments/assets/3588523c-53ad-4949-a466-f65a6f82b038) <br>
-
-Were you able to achieve the target model performance?
-What steps did you take in your attempts to increase model performance?
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+<br>
+**Were you able to achieve the target model performance?**
+Unfortunately, even with 4 attempts, we did not reach the target model performance percentage of 75% accuracy, but we did however hover around 72-73% for all attempts.<br>
+<br>
+**What steps did you take in your attempts to increase model performance?** <br>
+To attempt to increase model performance, I tried to increase the number of neurons in both layers and choosing a different activation function for the input and second layers. <br>
+<br>
+**Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.** <br>
+The results of the deep learning model yieled results that would come very close to the acceptable performance percentage of 75%, with our models leveling out and giving us around 73% accuracy across the initial attempt and the 3 optimized attempts. More testing with different hyperparameters would be needed to try and reach the acceptable performance percentage. <br>
+<br>
+A recommendation for a different model would be the random forest algorithm. I would choose this as an alternative because of its use in classification problems. It creates several decision trees based on different parameters and results and uses those results to create more branches of the tree to arrive at a singular result. The random forest algorithm is also used extensively in finance, healthcare, and marketing. Another added benefit of the random forest algorithm is the ability to pinpoint where the model is going awry and being able to attempt to steer it back in the right direction or take note of the issue. This can be done because of the ability to view all the branches of the decision trees that it creates.
